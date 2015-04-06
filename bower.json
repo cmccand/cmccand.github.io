@@ -1,0 +1,17 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cmccand/PortfolioSite",
+  "authors": [
+    "Chris McCandlish <cmccand@gmail.com>"
+  ],
+  "description": "Portfolio Site for Chris McCandlish",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
