@@ -5,13 +5,14 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* #bg {
+#bg {
   position: fixed;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-}
+  z-index: -5000; }
+
 #bg img {
   position: absolute;
   top: 0;
@@ -21,17 +22,8 @@ html {
   margin: auto;
   min-width: 50%;
   min-height: 50%;
-  z-index:-1000;
-} */
-/* .picwrapper {
-  margin: 5% auto;
-  margin-top:20%;
-  text-align:center;
-  width: 75%; */
-/*   &:after {
-  content: "";
-  display: table;
-} */
+  z-index: -5000; }
+
 .picture {
   width: 90%;
   position: relative;
@@ -42,7 +34,7 @@ html {
   padding: 10%;
   padding-top: 20%; }
   .picture img {
-    width: 20%;
+    width: 15vw;
     height: auto;
     position: absolute;
     top: 0;
@@ -52,17 +44,19 @@ html {
     text-align: center;
     margin: 0 auto; }
   .picture .trapezoid {
-    width: 85vw;
+    width: 88vw;
     opacity: .2;
     position: absolute;
     z-index: 0;
     margin: 0 auto;
     text-align: center;
+    top: 0;
     right: 0;
     left: 0;
-    border-bottom: 50vw solid #395585;
-    border-left: 30vw solid transparent;
-    border-right: 30vw solid transparent;
+    bottom: 0;
+    border-bottom: 65vw solid #B0BBCE;
+    border-left: 40vw solid transparent;
+    border-right: 40vw solid transparent;
     transform: rotate(0deg); }
   .picture .frame {
     border-top: 8px solid #6D5841;
@@ -231,6 +225,18 @@ header {
         header .inner p {
           font-size: 5vh; } }
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-animation-timing-function: steps(1, end); } }
+@-moz-keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-animation-timing-function: steps(1, end); } }
 @keyframes appear {
   0% {
     opacity: 0; }
