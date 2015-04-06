@@ -11,7 +11,6 @@ $(document).ready(function(){
     $("#screeny").slick('slickPrev');
   });
 
-  <script type="text/javascript">
   (function() {
     var config = {
       kitId: 'rij7fwm'
@@ -30,6 +29,6 @@ $(document).ready(function(){
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(tk, s);
   })();
-  </script>
+
 
 });
