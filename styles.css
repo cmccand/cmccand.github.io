@@ -298,13 +298,15 @@ header {
     opacity: 0; }
   100% {
     opacity: 1;
-    -webkit-animation-timing-function: steps(1, end); } }
+    -moz-animation-timing-function: steps(1, end); } }
 @keyframes appear {
   0% {
     opacity: 0; }
   100% {
     opacity: 1;
-    -webkit-animation-timing-function: steps(1, end); } }
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end); } }
 .wrapper {
   max-width: 68em;
   margin-left: auto;
