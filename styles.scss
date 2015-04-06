@@ -144,13 +144,13 @@ header {
     margin-left:20%;
     transform-origin: top center;
     transform:rotate(45deg);
-    animation: lamp 3s forwards;
+    @include animation(lamp 3s forwards);
   }
 
   .bulb {
     fill:#FBF8CA;
     fill-opacity:0.1;
-    animation: bulb .3s .3s 5 cubic-bezier(.26,1.17,.89,-0.74) alternate forwards;
+    @include animation(bulb .3s .3s 5 cubic-bezier(.26,1.17,.89,-0.74) alternate forwards);
   }
 
 
@@ -162,14 +162,14 @@ header {
   }
 
 
-  @keyframes bulb {
+  @include keyframes(bulb) {
     to {
       fill-opacity:1;
       fill:#FBF8CA;
     }
   }
 
-  @keyframes lamp {
+  @include keyframes(lamp) {
     5%{ transform:rotate(-45deg) }
     10%{ transform:rotate(35deg) }
     15%{ transform:rotate(-35deg) }
@@ -180,7 +180,7 @@ header {
     100%{ transform:rotate(0deg) }
   }
 
-  @keyframes drop {
+  @include keyframes(drop) {
     0%{ transform:translateY(-500px) }
     100%{ transform:translateY(0px) }
   }
