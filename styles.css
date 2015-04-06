@@ -218,8 +218,14 @@ header {
       header .inner p span {
         font-weight: bold;
         opacity: 0;
+        -webkit-animation: appear;
+        -moz-animation: appear;
         animation: appear;
+        -webkit-animation-delay: 1.9s;
+        -moz-animation-delay: 1.9s;
         animation-delay: 1.9s;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
       @media screen and (min-width: 53.75em) {
         header .inner p {

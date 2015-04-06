@@ -242,9 +242,9 @@ header {
       span {
         font-weight: bold;
         opacity:0;
-        animation: appear;
-        animation-delay: 1.9s;
-        animation-fill-mode:forwards;
+        @include animation(appear);
+        @include animation-delay(1.9s);
+        @include animation-fill-mode(forwards);
       }
       @include media($large-screen) {
         font-size:5vh;
