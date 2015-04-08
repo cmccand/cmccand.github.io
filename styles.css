@@ -132,6 +132,9 @@ header {
   height: 70vh;
   background-color: #2D4369;
   position: relative; }
+  @media screen and (min-width: 375px) and (max-width: 667px) {
+    header {
+      height: 20vh; } }
   header body {
     background-color: #4e4e4e;
     margin: 0;

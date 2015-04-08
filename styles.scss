@@ -141,6 +141,9 @@ header {
   height: 70vh;
   background-color: #2D4369;
   position:relative;
+  @include media(min-width 375px max-width 667px) {
+    height:20vh;
+  }
   body {
     background-color: #4e4e4e;
     margin:0;
