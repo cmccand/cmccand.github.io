@@ -99,6 +99,13 @@ html {
         width: 100%;
         height: auto;
         position: relative; }
+      .picture .frame .screen .vid {
+        width: 100%;
+        height: auto;
+        position: relative; }
+        .picture .frame .screen .vid video {
+          width: 100%;
+          height: auto; }
 
 /* .hook {
   width: 4px;

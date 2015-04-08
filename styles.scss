@@ -42,6 +42,7 @@
     text-align:center;
     margin: 0 auto;
   }
+
   .trapezoid {
     width: 88vw;
     opacity: .2;
@@ -101,6 +102,15 @@
         width:100%;
         height:auto;
         position:relative;
+      }
+      .vid {
+        width:100%;
+        height:auto;
+        position:relative;
+        video {
+          width:100%;
+          height:auto;
+        }
       }
     }
   }
