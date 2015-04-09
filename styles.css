@@ -99,11 +99,7 @@ html {
       background: linear-gradient(149deg, 0, 0, 128, 0.8);
       border: 10px solid #fff;
       box-shadow: 1px 1px 1px 1px rgba(189, 193, 194, 0.3) inset; }
-      .picture .frame .screen a {
-        position: relative;
-        z-index: 10000; }
       .picture .frame .screen .img {
-        pointer-events: auto;
         position: relative; }
       .picture .frame .screen .description {
         display: none;
@@ -125,8 +121,7 @@ html {
         .picture .frame .screen .description a {
           font-family: "kulturista-web";
           color: white;
-          cursor: auto;
-          text-decoration: none; }
+          cursor: pointer; }
       .picture .frame .screen img {
         width: 100%;
         height: auto;

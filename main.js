@@ -14,6 +14,7 @@ $(document).ready(function(){
   $(".img").mouseover(function(){
     $(".slide").children('.description').css("display", "block");
     $(".slide").children('.description').css("position", "absolute");
+    $(".slide").children('.link').css("display","block");
     $(".slide").children('img').css("position", "relative");
     $(".slide").children('img').css("opacity", ".2");
     $(".slide").children('video').css("opacity", ".2");
@@ -25,6 +26,10 @@ $(document).ready(function(){
     $(".slide").children('img').css("display", "block");
     $(".slide").children('video').css("display", "block");
   });
+
+  // $('.link').click(function() {
+  //   window.location='http://cmccand.github.io/Group-2/client/';
+  // });
 
 
 
