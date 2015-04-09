@@ -7,6 +7,7 @@
   <script>try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick.css"/>
+
 </head>
 <body>
 
@@ -59,18 +60,36 @@
       <div class="trapezoid"></div>
 
         <div class="frame">
-          <img src="cornershadows.png" alt="">
+          <img id="corners" src="cornershadows.png" alt="" class="cornerShadow">
 <!--         <div class="arrow-right"></div>
 <div class="arrow-left"></div> -->
           <div class="screen" id="screeny">
+
+            <div class="slide">
+              <div class="description">
+                <h2>Flixar</h2>
+                <p>Flixar was my first group project at The Iron Yard. Built using JQuery, Underscore and SASS, Flixar recommends movies based on a user's mood and tastes. Starting with a general mood, the user picks from increasingly specific subgenres until Flixar picks three films and displays their info by pulling from IMDB film API.</p>
+                <a href="http://cmccand.github.io/gitReal">See the Site!</a>
+            </div>
+              <img class="img" src="Flixar.png" alt="">
+            </div>
           <!-- <div class="shot"> -->
-              <img src="Flixar.png" alt="">
+            <div class="slide">
+              <div class="description">
+                <h2>Sipster</h2>
+                <p>Sipster is a hipster drink name generator. Built using BackboneJS and Ruby on Rails, it is the product of my collaboration with two students from the Rails class at The Iron Yard. Simply pick your mood, and Sipster randomly pulls two words out of its database and concatenates them into a drink name. The drinks don't actually correspond to the mood; it's just meant to be fun.</p>
+                <a href="http://cmccand.github.io/Group-2/client/">See the Site!</a>
+              </div>
+              <img class="img" src="Sipster2.png" alt="">
+            </div>
           <!-- </div> -->
-          <!-- <div class="shot"> -->
-              <img src="Sipster2.png" alt="">
-          <!-- </div> -->
-          <div class="vid">
-              <video preload autoplay loop>
+          <div class="vid slide">
+            <div class="description">
+              <h2>Riff</h2>
+              <p>My final project at The Iron Yard, Riff is the product of a collaboration with two Ruby on Rails students. Put simply, Riff allows users to upload spontaneous musical recordings of themselves. Other users can then see the uploaded "riff" and respond with their own "riff," which can then be played back with the original riff. There is still much styling and UX/UI to be added, but users can sign up, upload an .mp3 riff and play it back, as well as leave a comment on other user's riffs in the form of an upload.</p>
+              <a href="https://riff-101.herokuapp.com/#/">See the Site!</a>
+            </div>
+              <video preload autoplay loop muted class="img">
                 <source src="RiffVid2.mov">
                 <source src="RiffVid2.mp4">
               </video>
