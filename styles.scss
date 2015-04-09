@@ -126,10 +126,12 @@
           width:80%;
           margin: 0 auto;
         }
-        a {
+        p {
           font-family: "kulturista-web";
           color:white;
           cursor:pointer;
+          position:relative;
+          z-index:1000;
         }
       }
       img {
