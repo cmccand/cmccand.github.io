@@ -42,7 +42,6 @@
     text-align:center;
     margin: 0 auto;
   }
-
   .trapezoid {
     width: 88vw;
     opacity: .2;
@@ -78,17 +77,17 @@
       pointer-events:none;
     }
 
-/*     .arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid green;
-  position:absolute;
-  z-index: 5;
-  transform: rotate(315deg);
-}
-.arrow-left {
+    /*     .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid green;
+    position:absolute;
+    z-index: 5;
+    transform: rotate(315deg);
+  }
+  .arrow-left {
   width: 0;
   height: 0;
   border-top: 60px solid transparent;
@@ -99,70 +98,119 @@
   transform: rotate(225deg);
 } */
 
-    .screen {
+.screen {
+  width:100%;
+  background: linear-gradient(149deg, 0,0,128,.8);
+  border: 10px solid #fff;
+  box-shadow: 1px 1px 1px 1px rgba(189,193,194,0.3) inset;
+  .img {
+    position:relative;
+  }
+  .description {
+    display:none;
+    position:absolute;
+    text-align:center;
+    margin:auto;
+    width: 65vw;
+    opacity:1;
+    h2 {
+      font-family: 'Lato', sans-serif;
+      color:white;
+      text-align:center;
+    }
+    p {
+      font-family: "kulturista-web";
+      color:white;
+      text-align:center;
+      width:80%;
+      margin: 0 auto;
+    }
+    a {
+      font-family: "kulturista-web";
+      color:white;
+      cursor:pointer;
+
+    }
+  }
+  img {
+    width:100%;
+    height:auto;
+    position:relative;
+  }
+  .vid {
+    width:100%;
+    height:auto;
+    position:relative;
+    .description {
+      display:none;
+      h4 {
+        font-family: 'Lato', sans-serif;
+      }
+      p {
+        font-family: "kulturista-web";
+      }
+    }
+    video {
       width:100%;
-      background: linear-gradient(149deg, 0,0,128,.8);
-      border: 10px solid #fff;
-      box-shadow: 1px 1px 1px 1px rgba(189,193,194,0.3) inset;
-      .img {
-        position:relative;
-      }
-      .description {
-        display:none;
-        position:absolute;
-        text-align:center;
-        margin:auto;
-        width: 65vw;
-        opacity:1;
-        h2 {
-          font-family: 'Lato', sans-serif;
-          color:white;
-          text-align:center;
-        }
-        p {
-          font-family: "kulturista-web";
-          color:white;
-          text-align:center;
-          width:80%;
-          margin: 0 auto;
-        }
-        p {
-          font-family: "kulturista-web";
-          color:white;
-          cursor:pointer;
-          position:relative;
-          z-index:1000;
-        }
-      }
-      img {
-        width:100%;
-        height:auto;
-        position:relative;
-      }
-      .vid {
-        width:100%;
-        height:auto;
-        position:relative;
-        .description {
-          display:none;
-          h4 {
-            font-family: 'Lato', sans-serif;
-          }
-          p {
-            font-family: "kulturista-web";
-          }
-        }
-        video {
-          width:100%;
-          height:auto;
-          &:hover {
-            background: linear-gradient(149deg, #d3d4d5 0%,#d3d4d5 50%,#ccc 51%,#ccc 100%);
-          }
-        }
+      height:auto;
+      &:hover {
+        background: linear-gradient(149deg, #d3d4d5 0%,#d3d4d5 50%,#ccc 51%,#ccc 100%);
       }
     }
   }
 }
+}
+}
+
+////////LINDSAYS CODE///////////
+///////////////////////////////
+.media {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.media_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+
+}
+
+.media_body {
+  background: rgba(129, 140, 144, 0.8);
+  color: white;
+  font-size: 1em;
+  opacity: 0;
+  overflow: hidden;
+  padding: 30px;
+  text-align: center;
+  transition: 0.6s;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  height:100%;
+  @include transition(0.6s);
+  &:hover {
+    opacity: 1;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  a {
+    margin: 10px;
+  }
+}
+
+
+///////////////////////////////
+///////////////////////////////
 
 
 
@@ -299,7 +347,7 @@ header {
   0%   { opacity: 0; }
   100% { opacity: 1;
     @include animation-timing-function(steps(1, end));
-    }
+  }
 }
 
 
@@ -312,50 +360,50 @@ header {
   margin-top:0;
   .wrapper2 {
     @include span-columns(12);
-  .about {
-    @include span-columns(12);
-    margin-bottom: 8vh;
-    padding:20px;
-    background-image:url("brownblock.jpg");
-    background-size:cover;
-    background-position: center;
-    color: white;
+    .about {
+      @include span-columns(12);
+      margin-bottom: 8vh;
+      padding:20px;
+      background-image:url("brownblock.jpg");
+      background-size:cover;
+      background-position: center;
+      color: white;
       .bio {
         color: white;
         /* .trapezoid2 {
-          width: 150px;  height: 0px;
-          margin: 0 auto 0 auto;
-          margin-left:22%;
-          margin-right:60%;
-          border-bottom: 200px solid #856B4F;
-          border-left: 35px solid transparent;
-          border-right: 35px solid transparent;
-          transform: rotate(180deg);
-          z-index:-1000;
-        } */
-      }
-
-    }
-    .photo {
-      @include span-columns(3);
-      img {
-        width:100%;
-        border: 12px solid #EFEFEF;
-      }
-    }
-    .bio {
-      @include span-columns(9);
-      font-family: "kulturista-web";
-      background-size:cover;
-      color: #2D4369;
+        width: 150px;  height: 0px;
+        margin: 0 auto 0 auto;
+        margin-left:22%;
+        margin-right:60%;
+        border-bottom: 200px solid #856B4F;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        transform: rotate(180deg);
+        z-index:-1000;
+      } */
     }
 
+  }
+  .photo {
+    @include span-columns(3);
+    img {
+      width:100%;
+      border: 12px solid #EFEFEF;
+    }
+  }
+  .bio {
+    @include span-columns(9);
+    font-family: "kulturista-web";
+    background-size:cover;
+    color: #2D4369;
+  }
 
-.work {
-  h2 {
-    @include span-columns(12);
-    font-family: 'Lato', sans-serif;
-    color: #6D5841;
+
+  .work {
+    h2 {
+      @include span-columns(12);
+      font-family: 'Lato', sans-serif;
+      color: #6D5841;
     }
     .first {
       @include span-columns(12);

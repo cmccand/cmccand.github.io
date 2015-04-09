@@ -7,6 +7,7 @@
   <script>try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick.css"/>
+  <!-- <link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css"> -->
 
 </head>
 <body>
@@ -44,162 +45,173 @@
       <circle style="fill:none;stroke:#2D2D2F;stroke-width:0.5;stroke-miterlimit:10;" cx="49" cy="120" r="1.6"/>
     </g>
   -->
-    </svg>
+</svg>
 
 
-    <div class="inner">
-        <p>My name is <span>Chris McCandlish</span>. This is my portfolio page made with Bourbon, Neat and Bitters.</p>
+<div class="inner">
+  <p>My name is <span>Chris McCandlish</span>. This is my portfolio page made with Bourbon, Neat and Bitters.</p>
+</div>
+</header>
+
+
+<button class='test'>Test</button>
+
+<div class="picture">
+  <img src="lamp2.png" alt="">
+  <div class="trapezoid"></div>
+
+  <div class="frame">
+    <img id="corners" src="cornershadows.png" alt="" class="cornerShadow">
+    <!--         <div class="arrow-right"></div>
+    <div class="arrow-left"></div> -->
+    <div class="screen" id="screeny">
+
+      <div class="slide">
+        <!-- <div class="description">
+        <h2>Flixar</h2>
+        <p>Flixar was my first group project at The Iron Yard. Built using JQuery, Underscore and SASS, Flixar recommends movies based on a user's mood and tastes. Starting with a general mood, the user picks from increasingly specific subgenres until Flixar picks three films and displays their info by pulling from IMDB film API.</p>
+        <a class="link" href="http://cmccand.github.io/gitReal">See the Site!</a>
+      </div> -->
+      <div class="media">
+        <img class="media_image" src="Flixar.png" alt="">
+        <div class="media_body">
+          <h2>Flixar</h2>
+          <p>Flixar was my first group project at The Iron Yard. Built using JQuery, Underscore and SASS, Flixar recommends movies based on a user's mood and tastes. Starting with a general mood, the user picks from increasingly specific subgenres until Flixar picks three films and displays their info by pulling from IMDB film API.</p>
+          <a href="http://cmccand.github.io/gitReal">See The Site!</a>
+        </div>
+      </div>
+
     </div>
-  </header>
 
+    <div class="slide">
+      <div class="media">
+        <img class="media_image" src="Sipster2.png" alt="">
+        <div class="media_body">
+          h2>Sipster</h2>
+          <p>Sipster is a hipster drink name generator. Built using BackboneJS and Ruby on Rails, it is the product of my collaboration with two students from the Rails class at The Iron Yard. Simply pick your mood, and Sipster randomly pulls two words out of its database and concatenates them into a drink name. The drinks don't actually correspond to the mood; it's just meant to be fun.</p>
+          <a href="https://riff-101.herokuapp.com/#/">See the Site!</a>
+        </div>
+      </div>
+    </div>
 
-  <button class='test'>Test</button>
-
-    <div class="picture">
-      <img src="lamp2.png" alt="">
-      <div class="trapezoid"></div>
-
-        <div class="frame">
-          <img id="corners" src="cornershadows.png" alt="" class="cornerShadow">
-<!--         <div class="arrow-right"></div>
-<div class="arrow-left"></div> -->
-          <div class="screen" id="screeny">
-
-            <div class="slide">
-              <div class="description">
-                <h2>Flixar</h2>
-                <p>Flixar was my first group project at The Iron Yard. Built using JQuery, Underscore and SASS, Flixar recommends movies based on a user's mood and tastes. Starting with a general mood, the user picks from increasingly specific subgenres until Flixar picks three films and displays their info by pulling from IMDB film API.</p>
-                <p><a class="link" href="http://cmccand.github.io/gitReal">See the Site!</a></p>
-            </div>
-              <img class="img" src="Flixar.png" alt="">
-            </div>
-
-            <div class="slide">
-              <div class="description">
-                <h2>Sipster</h2>
-                <p>Sipster is a hipster drink name generator. Built using BackboneJS and Ruby on Rails, it is the product of my collaboration with two students from the Rails class at The Iron Yard. Simply pick your mood, and Sipster randomly pulls two words out of its database and concatenates them into a drink name. The drinks don't actually correspond to the mood; it's just meant to be fun.</p>
-                <a class="link" href="https://riff-101.herokuapp.com/#/">See the Site!</a>
-              </div>
-              <img class="img" src="Sipster2.png" alt="">
-            </div>
-
-          <div class="vid slide">
-            <div class="description">
+    <div class="vid slide">
+      <div class="media">
+        <img class="media_image" src="Riff1.png" alt="">
+            <div class="media_body">
               <h2>Riff</h2>
               <p>My final project at The Iron Yard, Riff is the product of a collaboration with two Ruby on Rails students. Put simply, Riff allows users to upload spontaneous musical recordings of themselves. Other users can then see the uploaded "riff" and respond with their own "riff," which can then be played back with the original riff. There is still much styling and UX/UI to be added, but users can sign up, upload an .mp3 riff and play it back, as well as leave a comment on other user's riffs in the form of an upload.</p>
-              <a class="link" href="https://riff-101.herokuapp.com/#/">See the Site!</a>
+              <a href="https://riff-101.herokuapp.com/#/">See the Site!</a>
             </div>
-              <video preload autoplay loop muted class="img">
-                <source src="RiffVid2.mov">
-                <source src="RiffVid2.mp4">
-              </video>
+
           </div>
 
         </div>
+
+      </div>
 
     </div>
   </div>
 
 
   <!-- <div class="expander">
-    <a href="javascript:void(0)" id="js-expander-trigger" class="expander-trigger expander-hidden">WORK</a>
-    <div id="js-expander-content" class="expander-content">
-      <section class="wrapper">
-        <div class="wrapper2">
+  <a href="javascript:void(0)" id="js-expander-trigger" class="expander-trigger expander-hidden">WORK</a>
+  <div id="js-expander-content" class="expander-content">
+  <section class="wrapper">
+  <div class="wrapper2">
 
-          <div class="work">
-            <div class="first">
-              <article>
-                Neat is an open source semantic grid framework built on top of Sass and Bourbon&hellip
-              </article>
-              <article class="photo">
-                <video src="screenvid.mov" autoplay loop></video>
-              </article>
-            </div>
-            <div class="second">
-              <article class="photo">
-                <img src="Sipster.png" alt="">
-              </article>
-              <article>
-                Discover more at neat.bourbon.io
-              </article>
-            </div>
-            <div class="third">
-              <article>
-                Neat is an open source semantic grid framework built on top of Sass and Bourbon&hellip
-              </article>
-              <article class="photo">
-                <img src="Flixar.png" alt="">
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="work">
+  <div class="first">
+  <article>
+  Neat is an open source semantic grid framework built on top of Sass and Bourbon&hellip
+</article>
+<article class="photo">
+<video src="screenvid.mov" autoplay loop></video>
+</article>
+</div>
+<div class="second">
+<article class="photo">
+<img src="Sipster.png" alt="">
+</article>
+<article>
+Discover more at neat.bourbon.io
+</article>
+</div>
+<div class="third">
+<article>
+Neat is an open source semantic grid framework built on top of Sass and Bourbon&hellip
+</article>
+<article class="photo">
+<img src="Flixar.png" alt="">
+</article>
+</div>
+</div>
+</div>
+</section>
 
-    </div>
-  </div>
+</div>
+</div>
 
-  <div class="expander">
-    <a href="javascript:void(0)" id="js-expander-trigger2" class="expander-trigger expander-hidden">Expandable section</a>
-    <div id="js-expander-content" class="expander-content">
-      <section class="wrapper">
-        <div class="wrapper2">
-          <h2>ABOUT ME</h2>
-          <div class="about">
-            <article class="photo">
-              <img src="Profile.jpg" alt="">
-            </article>
-            <article class="bio">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi maiores commodi omnis vitae quis, quam, fuga ullam corrupti est aut nisi nesciunt optio veritatis laboriosam dignissimos, iure saepe impedit labore?
-              <div class="trapezoid2"></div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-
-
-
-  <div class="wrapper-for-content-outside-of-footer">
-  Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
-  </div>
-
-  <footer class="footer-2" role="contentinfo">
-    <div class="footer-logo">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
-    </div>
-    <ul>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-      <li><a href="javascript:void(0)">Products</a></li>
-    </ul>
-
-    <div class="footer-secondary-links">
-      <ul>
-        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-        <li><a href="javascript:void(0)">Privacy Policy</a></li>
-      </ul>
-
-      <ul class="footer-social">
-        <li><a href="javascript:void(0)">
-          <img       src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
-        </a></li>
-        <li><a href="javascript:void(0)">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-        </a></li>
-        <li><a href="javascript:void(0)">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
-        </a></li>
-      </ul>
-    </div>
-  </footer> -->
-
-  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" src="bower_components/slick.js/slick/slick.js"></script>
+<div class="expander">
+<a href="javascript:void(0)" id="js-expander-trigger2" class="expander-trigger expander-hidden">Expandable section</a>
+<div id="js-expander-content" class="expander-content">
+<section class="wrapper">
+<div class="wrapper2">
+<h2>ABOUT ME</h2>
+<div class="about">
+<article class="photo">
+<img src="Profile.jpg" alt="">
+</article>
+<article class="bio">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi maiores commodi omnis vitae quis, quam, fuga ullam corrupti est aut nisi nesciunt optio veritatis laboriosam dignissimos, iure saepe impedit labore?
+<div class="trapezoid2"></div>
+</article>
+</div>
+</div>
+</section>
+</div>
+</div>
 
 
-  <script type="text/javascript" src="main.js"></script>
+
+<div class="wrapper-for-content-outside-of-footer">
+Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+</div>
+
+<footer class="footer-2" role="contentinfo">
+<div class="footer-logo">
+<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+</div>
+<ul>
+<li><a href="javascript:void(0)">About</a></li>
+<li><a href="javascript:void(0)">Contact</a></li>
+<li><a href="javascript:void(0)">Products</a></li>
+</ul>
+
+<div class="footer-secondary-links">
+<ul>
+<li><a href="javascript:void(0)">Terms and Conditions</a></li>
+<li><a href="javascript:void(0)">Privacy Policy</a></li>
+</ul>
+
+<ul class="footer-social">
+<li><a href="javascript:void(0)">
+<img       src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+</a></li>
+<li><a href="javascript:void(0)">
+<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+</a></li>
+<li><a href="javascript:void(0)">
+<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+</a></li>
+</ul>
+</div>
+</footer> -->
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/slick.js/slick/slick.js"></script>
+
+
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>

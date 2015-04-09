@@ -68,25 +68,25 @@ html {
     width: 100%;
     height: auto;
     /*     .arrow-right {
-      width: 0;
-      height: 0;
-      border-top: 60px solid transparent;
-      border-bottom: 60px solid transparent;
-      border-left: 60px solid green;
-      position:absolute;
-      z-index: 5;
-      transform: rotate(315deg);
-    }
-    .arrow-left {
-      width: 0;
-      height: 0;
-      border-top: 60px solid transparent;
-      border-bottom: 60px solid transparent;
-      border-left: 60px solid green;
-      position:absolute;
-      z-index: 5;
-      transform: rotate(225deg);
-    } */ }
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid green;
+    position:absolute;
+    z-index: 5;
+    transform: rotate(315deg);
+  }
+  .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid green;
+  position:absolute;
+  z-index: 5;
+  transform: rotate(225deg);
+} */ }
     .picture .frame a {
       width: 100%;
       height: auto; }
@@ -118,12 +118,10 @@ html {
           text-align: center;
           width: 80%;
           margin: 0 auto; }
-        .picture .frame .screen .description p {
+        .picture .frame .screen .description a {
           font-family: "kulturista-web";
           color: white;
-          cursor: pointer;
-          position: relative;
-          z-index: 1000; }
+          cursor: pointer; }
       .picture .frame .screen img {
         width: 100%;
         height: auto;
@@ -143,6 +141,44 @@ html {
           height: auto; }
           .picture .frame .screen .vid video:hover {
             background: linear-gradient(149deg, #d3d4d5 0%, #d3d4d5 50%, #ccc 51%, #ccc 100%); }
+
+.media {
+  display: inline-block;
+  position: relative;
+  vertical-align: top; }
+
+.media_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block; }
+
+.media_body {
+  background: rgba(129, 140, 144, 0.8);
+  color: white;
+  font-size: 1em;
+  opacity: 0;
+  overflow: hidden;
+  padding: 30px;
+  text-align: center;
+  transition: 0.6s;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s; }
+  .media_body:hover {
+    opacity: 1; }
+  .media_body h2 {
+    margin-top: 0; }
+  .media_body p {
+    margin-bottom: 10px; }
+  .media_body a {
+    margin: 10px; }
 
 header {
   height: 70vh;
@@ -366,17 +402,17 @@ header {
         margin-right: 0; }
       .wrapper .wrapper2 .about .bio {
         color: white;
-        /* .trapezoid2 {
-          width: 150px;  height: 0px;
-          margin: 0 auto 0 auto;
-          margin-left:22%;
-          margin-right:60%;
-          border-bottom: 200px solid #856B4F;
-          border-left: 35px solid transparent;
-          border-right: 35px solid transparent;
-          transform: rotate(180deg);
-          z-index:-1000;
-        } */ }
+      /* .trapezoid2 {
+      width: 150px;  height: 0px;
+      margin: 0 auto 0 auto;
+      margin-left:22%;
+      margin-right:60%;
+      border-bottom: 200px solid #856B4F;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      transform: rotate(180deg);
+      z-index:-1000;
+    } */ }
     .wrapper .wrapper2 .photo {
       float: left;
       display: block;
