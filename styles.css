@@ -179,6 +179,7 @@ html {
   .media_body p {
     /*     margin-bottom: 10px; */
     font-family: "kulturista-web";
+    font-weight: 100;
     font-size: 3vh;
     width: 60%;
     text-align: center;
