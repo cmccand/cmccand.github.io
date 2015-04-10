@@ -193,7 +193,6 @@
   z-index: 1;
   position: absolute;
   height:100%;
-  font-family: "kulturista-web";
   @include transition(0.6s);
   &:hover {
     opacity: 1;
@@ -203,6 +202,7 @@
   }
   p {
     margin-bottom: 10px;
+    font-family: "kulturista-web";
   }
   a {
     margin: 10px;
