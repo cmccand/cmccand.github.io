@@ -155,7 +155,7 @@ html {
   display: block; }
 
 .media_body {
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   color: black;
   opacity: 0;
   overflow: auto;
