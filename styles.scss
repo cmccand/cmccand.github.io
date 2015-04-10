@@ -180,10 +180,10 @@
 }
 
 .media_body {
-  background: #2D4369;
+  background: rgba(45, 67, 105, .95);
   color: white;
   opacity: 0;
-/*   overflow: scroll; */
+  overflow: auto;
   text-align: center;
   transition: 0.6s;
   bottom: 0;
@@ -211,6 +211,14 @@
   }
   button {
     margin:2%;
+    padding:2%;
+    background: #6B5841;
+    color:white;
+    font-family: "kulturista-web";
+    border-radius:5px;
+    &:hover {
+      background: #FFFCBA;
+    }
   }
   a {
 /*     margin: 10px; */
