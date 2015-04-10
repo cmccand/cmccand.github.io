@@ -174,7 +174,8 @@ html {
   .media_body:hover {
     opacity: 1; }
   .media_body h2 {
-    margin-top: 0; }
+    margin-top: 0;
+    font-family: 'Lato', sans-serif; }
   .media_body p {
     margin-bottom: 10px;
     font-family: "kulturista-web"; }
