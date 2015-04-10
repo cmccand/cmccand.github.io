@@ -183,6 +183,8 @@ html {
     width: 60%;
     text-align: center;
     margin: 0 auto; }
+    .media_body p span {
+      font-weight: bold; }
   .media_body button {
     margin: 2%;
     padding: 2%;
