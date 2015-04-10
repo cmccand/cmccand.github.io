@@ -182,7 +182,8 @@ html {
     font-size: 3vh;
     width: 60%;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-shadow: 5px 6px 5px rgba(1, 4, 2, 0.9); }
     .media_body p span {
       font-weight: bold; }
   .media_body button {
