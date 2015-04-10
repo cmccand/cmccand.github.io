@@ -180,8 +180,8 @@
 }
 
 .media_body {
-  background: rgba(217, 224, 235, 0.9);
-  color: black;
+  background: #2D4369;
+  color: white;
   opacity: 0;
   overflow: scroll;
   text-align: center;
@@ -204,7 +204,13 @@
   p {
 /*     margin-bottom: 10px; */
     font-family: "kulturista-web";
-    font-size: 4vh;
+    font-size: 3vh;
+    width:60%;
+    text-align:center;
+    margin:0 auto;
+  }
+  button {
+    margin:2%;
   }
   a {
 /*     margin: 10px; */

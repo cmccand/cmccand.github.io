@@ -155,8 +155,8 @@ html {
   display: block; }
 
 .media_body {
-  background: rgba(217, 224, 235, 0.9);
-  color: black;
+  background: #2D4369;
+  color: white;
   opacity: 0;
   overflow: scroll;
   text-align: center;
@@ -179,7 +179,12 @@ html {
   .media_body p {
     /*     margin-bottom: 10px; */
     font-family: "kulturista-web";
-    font-size: 4vh; }
+    font-size: 3vh;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto; }
+  .media_body button {
+    margin: 2%; }
   .media_body a {
     /*     margin: 10px; */
     cursor: pointer; }
