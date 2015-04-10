@@ -180,8 +180,8 @@
 }
 
 .media_body {
-  background: rgba(45, 67, 105, .95);
-  color: white;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
   opacity: 0;
   overflow: auto;
   text-align: center;
@@ -208,7 +208,7 @@
     width:60%;
     text-align:center;
     margin:0 auto;
-    text-shadow: 5px 6px 5px rgba(1,4,2,0.9);
+    text-shadow: 5px 6px 5px rgba(1,4,2,0.1);
 
   span {
       font-weight:bold;
