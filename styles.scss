@@ -63,7 +63,6 @@
     border-right: 8px solid #6D5841;
     border-bottom: 8px solid #6D5841;
     border-left: 8px solid #6D5841;
-    box-shadow: 4px 4px 0 0 rgba(189,166,72,0.6);
     position:relative;
     width:100%;
     height:auto;
@@ -184,7 +183,7 @@
   background: rgba(217, 224, 235, 0.9);
   color: black;
   opacity: 0;
-  overflow: hidden;
+  overflow: scroll;
   text-align: center;
   transition: 0.6s;
   bottom: 0;
