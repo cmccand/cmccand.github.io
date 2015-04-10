@@ -22,222 +22,6 @@
   z-index: -5000;
 }
 
-.picture {
-  width: 90%;
-  position: relative;
-  z-index:0;
-  text-align:center;
-  margin: 0 auto;
-  margin-top: 5vh;
-  padding:10%;
-  padding-top:20%;
-  img {
-    width:15vw;
-    height:auto;
-    position:absolute;
-    top:0;
-    right:0;
-    left:0;
-    z-index:1;
-    text-align:center;
-    margin: 0 auto;
-  }
-  .trapezoid {
-    width: 88vw;
-    opacity: .2;
-    position:absolute;
-    z-index:0;
-    margin: 0 auto;
-    text-align:center;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-    border-bottom: 65vw solid #B0BBCE;
-    border-left: 40vw solid transparent;
-    border-right: 40vw solid transparent;
-    transform: rotate(0deg);
-  }
-  .frame {
-    border-top: 8px solid #6D5841;
-    border-right: 8px solid #6D5841;
-    border-bottom: 8px solid #6D5841;
-    border-left: 8px solid #6D5841;
-    position:relative;
-    width:100%;
-    height:auto;
-    a {
-      width: 100%;
-      height:auto;
-    }
-    #corners {
-      width:100%;
-      height:auto;
-      pointer-events:none;
-    }
-
-    /*     .arrow-right {
-    width: 0;
-    height: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 60px solid green;
-    position:absolute;
-    z-index: 5;
-    transform: rotate(315deg);
-  }
-  .arrow-left {
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid green;
-  position:absolute;
-  z-index: 5;
-  transform: rotate(225deg);
-} */
-
-.screen {
-  width:100%;
-  background: linear-gradient(149deg, 0,0,128,.8);
-  border: 10px solid #fff;
-  box-shadow: 1px 1px 1px 1px rgba(189,193,194,0.3) inset;
-  .img {
-    position:relative;
-  }
-  .description {
-    display:none;
-    position:absolute;
-    text-align:center;
-    margin:auto;
-    width: 65vw;
-    opacity:1;
-    h2 {
-      font-family: 'Lato', sans-serif;
-      color:white;
-      text-align:center;
-    }
-    p {
-      font-family: "kulturista-web";
-      color:white;
-      text-align:center;
-      width:80%;
-      margin: 0 auto;
-    }
-    a {
-      font-family: "kulturista-web";
-      color:white;
-      cursor:pointer;
-
-    }
-  }
-  img {
-    width:100%;
-    height:auto;
-    position:relative;
-  }
-  .vid {
-    width:100%;
-    height:auto;
-    position:relative;
-    .description {
-      display:none;
-      h4 {
-        font-family: 'Lato', sans-serif;
-      }
-      p {
-        font-family: "kulturista-web";
-      }
-    }
-    video {
-      width:100%;
-      height:auto;
-      &:hover {
-        background: linear-gradient(149deg, #d3d4d5 0%,#d3d4d5 50%,#ccc 51%,#ccc 100%);
-      }
-    }
-  }
-}
-}
-}
-
-////////LINDSAYS CODE///////////
-///////////////////////////////
-.media {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-}
-
-.media_image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-
-}
-
-.media_body {
-  background: rgba(255, 255, 255, 1);
-  color: black;
-  opacity: 0;
-  overflow: auto;
-  text-align: center;
-  transition: 0.6s;
-  bottom: 0;
-  z-index: 1;
-  position: absolute;
-  height:100%;
-  padding:10%;
-/*   padding-top:8%; */
-  @include transition(0.6s);
-  &:hover {
-    opacity: 1;
-  }
-  h2 {
-    margin-top: 0;
-    font-family: 'Lato', sans-serif;
-    font-size:6vh;
-  }
-  p {
-/*     margin-bottom: 10px; */
-    font-family: "kulturista-web";
-    font-weight:100;
-    font-size: 3vh;
-    width:60%;
-    text-align:center;
-    margin:0 auto;
-    text-shadow: 5px 6px 5px rgba(1,4,2,0.1);
-
-  span {
-      font-weight:bold;
-    }
-  }
-  button {
-    margin:2%;
-    padding:2%;
-    background: white;
-    color:#2D4369;
-    font-family: "kulturista-web";
-    border-radius:5px;
-    &:hover {
-      background: #FFFCBA;
-    }
-  }
-  a {
-/*     margin: 10px; */
-    cursor:pointer;
-  }
-}
-
-
-///////////////////////////////
-///////////////////////////////
-
-
-
 header {
   height: 70vh;
   background-color: #2D4369;
@@ -266,7 +50,6 @@ header {
     fill-opacity:0.1;
     @include animation(bulb .3s .3s 5 cubic-bezier(.26,1.17,.89,-0.74) alternate forwards);
   }
-
 
   .switch {
     transition:transform .3s;
@@ -373,6 +156,231 @@ header {
     @include animation-timing-function(steps(1, end));
   }
 }
+
+
+
+.picture {
+  width: 90%;
+  position: relative;
+  z-index:0;
+  text-align:center;
+  margin: 0 auto;
+  margin-top: 5vh;
+  padding:10%;
+  padding-top:20%;
+  display:block;
+  img {
+    width:15vw;
+    height:auto;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1;
+    text-align:center;
+    margin: 0 auto;
+  }
+  .trapezoid {
+    width: 88vw;
+    opacity: .2;
+    position:absolute;
+    z-index:0;
+    margin: 0 auto;
+    text-align:center;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    border-bottom: 65vw solid #B0BBCE;
+    border-left: 40vw solid transparent;
+    border-right: 40vw solid transparent;
+    transform: rotate(0deg);
+  }
+  i.prev {
+    left:3vw;
+    width:5%;
+    font-size:8vw;
+    display:block;
+    top:50%;
+    position:absolute;
+    color:white;
+    cursor:pointer;
+    transition: all .4s ease-in-out;
+    &:hover {
+      transition: all .1s ease;
+      transform: translate(-5px, 0);
+      margin-right: -5px;
+      color:rgba(234, 236, 240, 0.9);
+    }
+  }
+  i.next {
+    right:3vw;
+    width:5%;
+    font-size:8vw;
+    top:50%;
+    display:block;
+    position:absolute;
+    color:white;
+    cursor:pointer;
+    transition: all .4s ease-in-out;
+    &:hover {
+      transition: all .1s ease;
+      transform: translate(5px, 0);
+      margin-left: 5px;
+      color:rgba(234, 236, 240, 0.9);
+    }
+  }
+  .frame {
+    border-top: 8px solid #6D5841;
+    border-right: 8px solid #6D5841;
+    border-bottom: 8px solid #6D5841;
+    border-left: 8px solid #6D5841;
+    position:relative;
+    width:100%;
+    height:auto;
+    a {
+      width: 100%;
+      height:auto;
+    }
+    #corners {
+      width:100%;
+      height:auto;
+      pointer-events:none;
+    }
+
+.screen {
+  width:100%;
+  background: linear-gradient(149deg, 0,0,128,.8);
+  border: 10px solid #fff;
+  box-shadow: 1px 1px 1px 1px rgba(189,193,194,0.3) inset;
+  .img {
+    position:relative;
+  }
+  .description {
+    display:none;
+    position:absolute;
+    text-align:center;
+    margin:auto;
+    width: 65vw;
+    opacity:1;
+    h2 {
+      font-family: 'Lato', sans-serif;
+      color:white;
+      text-align:center;
+    }
+    p {
+      font-family: "kulturista-web";
+      color:white;
+      text-align:center;
+      width:80%;
+      margin: 0 auto;
+    }
+    a {
+      font-family: "kulturista-web";
+      color:white;
+      cursor:pointer;
+
+    }
+  }
+  img {
+    width:100%;
+    height:auto;
+    position:relative;
+  }
+  .vid {
+    width:100%;
+    height:auto;
+    position:relative;
+    .description {
+      display:none;
+      h4 {
+        font-family: 'Lato', sans-serif;
+      }
+      p {
+        font-family: "kulturista-web";
+      }
+    }
+    video {
+      width:100%;
+      height:auto;
+      &:hover {
+        background: linear-gradient(149deg, #d3d4d5 0%,#d3d4d5 50%,#ccc 51%,#ccc 100%);
+      }
+    }
+  }
+}
+}
+}
+
+.media {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.media_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+
+}
+
+.media_body {
+  background: rgba(255, 255, 255, 1);
+  color: black;
+  opacity: 0;
+  overflow: auto;
+  text-align: center;
+  transition: 0.6s;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  height:100%;
+  padding:10%;
+  @include transition(0.6s);
+  &:hover {
+    opacity: 1;
+  }
+  h2 {
+    margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    font-size:6vh;
+  }
+  p {
+/*     margin-bottom: 10px; */
+    font-family: "kulturista-web";
+    font-weight:100;
+    font-size: 3vh;
+    width:60%;
+    text-align:center;
+    margin:0 auto;
+    text-shadow: 5px 6px 5px rgba(1,4,2,0.1);
+
+  span {
+      font-weight:bold;
+    }
+  }
+  button {
+    margin:2%;
+    padding:2%;
+    background: white;
+    color:#2D4369;
+    font-family: "kulturista-web";
+    border-radius:5px;
+    &:hover {
+      background: #FFFCBA;
+    }
+  }
+  a {
+/*     margin: 10px; */
+    cursor:pointer;
+  }
+}
+
+
 
 
 

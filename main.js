@@ -7,9 +7,14 @@ $(document).ready(function(){
     responsive:true
   });
 
-  $('.test').click(function(){
+  $('.prev').click(function(){
     $("#screeny").slick('slickPrev');
   });
+
+  $('.next').click(function(){
+    $("#screeny").slick('slickNext');
+  });
+
 
   // $(".img").mouseover(function(){
   //   $(".slide").children('.description').css("display", "block");
