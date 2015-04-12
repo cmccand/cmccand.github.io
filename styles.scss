@@ -250,8 +250,8 @@ header {
     height:35vh;
     display: inline-block;
     margin-left:25%;
-    transform-origin: top center;
-    transform:rotate(45deg);
+    @include transform-origin(top center);
+    @include transform(rotate(45deg));
     @include animation(lamp 3s forwards);
     position:absolute;
   }
@@ -263,9 +263,9 @@ header {
   }
 
   .switch {
-    transition:transform .3s;
+    @include transition(transform .3s);
     &:active{
-      transform:translateY(5px);
+      @include transform(translateY(5px));
     }
   }
 
