@@ -203,7 +203,7 @@ header {
     width: 8vw;
     height: 35vh;
     display: inline-block;
-    margin-left: 24%;
+    margin-left: 25%;
     transform-origin: top center;
     transform: rotate(45deg);
     -webkit-animation: lamp 3s forwards;
