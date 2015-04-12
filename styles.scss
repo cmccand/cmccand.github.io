@@ -278,19 +278,19 @@ header {
   }
 
   @include keyframes(lamp) {
-    5%{ transform:rotate(-45deg) }
-    10%{ transform:rotate(35deg) }
-    15%{ transform:rotate(-35deg) }
-    25%{ transform:rotate(15deg) }
-    40%{ transform:rotate(-15deg) }
-    65% { transform:rotate(3deg) }
-    85% { transform:rotate(-1deg) }
-    100%{ transform:rotate(0deg) }
+    5%{ @include transform(rotate(-45deg)) }
+    10%{ @include transform(rotate(35deg)) }
+    15%{ @include transform(rotate(-35deg)) }
+    25%{ @include transform(rotate(15deg)) }
+    40%{ @include transform(rotate(-15deg)) }
+    65% { @include transform(rotate(3deg)) }
+    85% { @include transform(rotate(-1deg)) }
+    100%{ @include transform(rotate(0deg)) }
   }
 
   @include keyframes(drop) {
-    0%{ transform:translateY(-500px) }
-    100%{ transform:translateY(0px) }
+    0%{ @include transform(translateY(-500px)) }
+    100%{ @include transform(translateY(0px)) }
   }
 
 
