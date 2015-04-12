@@ -28,7 +28,7 @@ header {
   height: 70vh;
   background-color: #2D4369;
   position: relative; }
-  @media screen and (min-width: 375px) and (max-width: 667px) {
+  @media screen and (max-width: 375px) {
     header {
       height: 20vh; } }
   header body {
