@@ -37,9 +37,8 @@ header {
     text-align: center;
     font-size: 10px; }
   header .modal {
-    width: 15vw;
-    display: inline-block;
-    float: left; }
+    width: 12vw;
+    display: inline-block; }
     header .modal label {
       cursor: pointer;
       margin-bottom: 0; }
@@ -50,14 +49,15 @@ header {
     header .modal .modal-state {
       display: none; }
     header .modal .modal-trigger {
+      display: inline-block;
       background-color: #2D4369;
       color: white;
       padding: 6%;
       font-family: "Lato", sans-serif;
       font-size: 1.2vw;
       border: 3px solid #6D5841;
-      margin-top: 5%;
-      margin-left: 5%;
+      margin-top: 7%;
+      margin-right: 10%;
       border-radius: 10%;
       width: 10vw;
       text-align: center; }
@@ -177,11 +177,33 @@ header {
       top: 0.5em; }
   header .modal-open {
     overflow: hidden; }
+  header .stalk {
+    float: right;
+    text-align: right;
+    margin-top: 0;
+    color: white;
+    padding: 1%;
+    width: 38vw;
+    display: inline-block; }
+    header .stalk p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.2vw;
+      border: 3px solid #6D5841;
+      border-radius: 10%;
+      display: inline-block;
+      padding: 4%; }
+    header .stalk i {
+      padding: 1%;
+      font-size: 2vw;
+      border-radius: 10%; }
+      header .stalk i:hover {
+        background-color: #FBF8CA;
+        color: #2D4369; }
   header .lamp {
     width: 8vw;
     height: 35vh;
     display: inline-block;
-    margin-left: 8%;
+    margin-left: 24%;
     transform-origin: top center;
     transform: rotate(45deg);
     -webkit-animation: lamp 3s forwards;

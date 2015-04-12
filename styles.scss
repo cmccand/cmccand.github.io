@@ -54,9 +54,8 @@ header {
     $modal-image-height: 135px;
     $modal-image-width: $modal-image-height;
     $modal-trigger-image-width: 300px;
-    width:15vw;
+    width:12vw;
     display:inline-block;
-    float:left;
     label {
       cursor: pointer;
       margin-bottom: 0;
@@ -74,14 +73,16 @@ header {
 
     .modal-trigger {
       @include button(flat #FBF8CA);
+      display:inline-block;
       background-color: #2D4369;
       color:white;
       padding: 6%;
       font-family: "Lato", sans-serif;
       font-size:1.2vw;
       border: 3px solid #6D5841;
-      margin-top:5%;
-      margin-left:5%;
+      margin-top:7%;
+      margin-right:10%;
+
       border-radius:10%;
       width:10vw;
       text-align:center;
@@ -211,13 +212,44 @@ header {
     overflow: hidden;
   }
 
+//STALK BUTTONS
 
+.stalk {
+  float:right;
+  text-align:right;
+  margin-top:0;
+  color:white;
+  padding:1%;
+  width:38vw;
+  display:inline-block;
+  p {
+    font-family: "Lato", sans-serif;
+    font-size:1.2vw;
+    border:3px solid #6D5841;
+    border-radius: 10%;
+    display:inline-block;
+    padding:4%;
+  }
+  i {
+    padding:1%;
+    font-size:2vw;
+    border-radius:10%;
+    &:hover {
+      background-color: #FBF8CA;
+      color:#2D4369;
+    }
+  }
+}
+
+
+
+//SWINGING LAMP
 
   .lamp {
     width: 8vw;
     height:35vh;
     display: inline-block;
-    margin-left:8%;
+    margin-left:24%;
     transform-origin: top center;
     transform:rotate(45deg);
     @include animation(lamp 3s forwards);
