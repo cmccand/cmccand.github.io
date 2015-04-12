@@ -146,7 +146,6 @@ header {
     .modal-inner {
       @include transition(opacity 0.25s ease);
       background: $modal-background;
-      border-radius: $base-border-radius;
       margin-top: 0;
       margin: auto;
       max-height: 95%;
@@ -183,9 +182,33 @@ header {
 
       .modal-content {
         color: $base-font-color;
-
         @include media($medium-screen) {
-          @include columns(2 8em);
+          h1 {
+            font-family: "Lato", sans-serif;
+            text-align:center;
+            color: #6D5841;
+          }
+          ul {
+            text-align:center;
+            li {
+              display:inline-block;
+              list-style-type:none;
+              padding: 7%;
+              font-family: "kulturista-web";
+              font-size:1.5vw;
+              color: #2D4369;
+              i {
+                padding:4%;
+                font-size:4vw;
+                border-radius:10%;
+                display:block;
+                &:hover {
+                  background-color: #FBF8CA;
+                  color:#2D4369;
+                }
+              }
+            }
+          }
         }
       }
 
@@ -233,15 +256,7 @@ header {
     display:inline-block;
     padding:4%;
   }
-  i {
-    padding:1%;
-    font-size:2vw;
-    border-radius:10%;
-    &:hover {
-      background-color: #FBF8CA;
-      color:#2D4369;
-    }
-  }
+
 }
 
 
@@ -297,45 +312,6 @@ header {
   }
 
 
-  .navigation-wrapper {
-    width:100%;
-    .logo {
-      float:left;
-      border:solid 4px #6D5841;
-      font-family: 'Lato', sans-serif;
-      padding: 1%;
-      width:50px;
-      height:50px;
-      color: white;
-      font-size:12px;
-      text-align:center;
-      margin-top:1%;
-      margin-left:1%;
-    }
-    ul {
-      float: right;
-      width:auto;
-      padding-left:0;
-      li {
-        display: inline-block;
-        list-style-type:none;
-        padding: 2%;
-        &:hover {
-          background-color:#FBF8CA;
-          a {
-            color: #2D4369;
-          }
-        }
-        a {
-          text-decoration:none;
-          font-family: 'Lato', sans-serif;
-          font-size:2.5vh;
-          color: white;
-          letter-spacing:.2em;
-        }
-      }
-    }
-  }
   .inner {
     $base-border-radius: 3px !default;
     $large-screen: em(860) !default;

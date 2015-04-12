@@ -130,7 +130,6 @@ header {
       -moz-transition: opacity 0.25s ease;
       transition: opacity 0.25s ease;
       background: white;
-      border-radius: 3px;
       margin-top: 0;
       margin: auto;
       max-height: 95%;
@@ -159,10 +158,27 @@ header {
       header .modal .modal-inner .modal-content {
         color: #333; }
         @media screen and (min-width: 40em) {
-          header .modal .modal-inner .modal-content {
-            -webkit-columns: 2 8em;
-            -moz-columns: 2 8em;
-            columns: 2 8em; } }
+          header .modal .modal-inner .modal-content h1 {
+            font-family: "Lato", sans-serif;
+            text-align: center;
+            color: #6D5841; }
+          header .modal .modal-inner .modal-content ul {
+            text-align: center; }
+            header .modal .modal-inner .modal-content ul li {
+              display: inline-block;
+              list-style-type: none;
+              padding: 7%;
+              font-family: "kulturista-web";
+              font-size: 1.5vw;
+              color: #2D4369; }
+              header .modal .modal-inner .modal-content ul li i {
+                padding: 4%;
+                font-size: 4vw;
+                border-radius: 10%;
+                display: block; }
+                header .modal .modal-inner .modal-content ul li i:hover {
+                  background-color: #FBF8CA;
+                  color: #2D4369; } }
       header .modal .modal-inner a.cta {
         color: white;
         display: inline-block;
@@ -192,13 +208,6 @@ header {
       border-radius: 10%;
       display: inline-block;
       padding: 4%; }
-    header .stalk i {
-      padding: 1%;
-      font-size: 2vw;
-      border-radius: 10%; }
-      header .stalk i:hover {
-        background-color: #FBF8CA;
-        color: #2D4369; }
   header .lamp {
     width: 8vw;
     height: 35vh;
@@ -352,38 +361,6 @@ header {
     -ms-transform: translateY(0px);
     -o-transform: translateY(0px);
     transform: translateY(0px); } }
-  header .navigation-wrapper {
-    width: 100%; }
-    header .navigation-wrapper .logo {
-      float: left;
-      border: solid 4px #6D5841;
-      font-family: 'Lato', sans-serif;
-      padding: 1%;
-      width: 50px;
-      height: 50px;
-      color: white;
-      font-size: 12px;
-      text-align: center;
-      margin-top: 1%;
-      margin-left: 1%; }
-    header .navigation-wrapper ul {
-      float: right;
-      width: auto;
-      padding-left: 0; }
-      header .navigation-wrapper ul li {
-        display: inline-block;
-        list-style-type: none;
-        padding: 2%; }
-        header .navigation-wrapper ul li:hover {
-          background-color: #FBF8CA; }
-          header .navigation-wrapper ul li:hover a {
-            color: #2D4369; }
-        header .navigation-wrapper ul li a {
-          text-decoration: none;
-          font-family: 'Lato', sans-serif;
-          font-size: 2.5vh;
-          color: white;
-          letter-spacing: .2em; }
   header .inner {
     position: absolute;
     top: 60%;

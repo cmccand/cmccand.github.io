@@ -29,7 +29,7 @@
 
 
     <div class="stalk">
-      
+
       <div class="modal">
         <label for="modal-1">
           <div class="modal-trigger">ABOUT ME</div>
@@ -38,16 +38,31 @@
         <div class="modal-fade-screen">
           <div class="modal-inner">
             <div class="modal-close" for="modal-1"></div>
-            <h1>Modal Title</h1>
-            <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+            <h1>ABOUT ME</h1>
             <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
           </div>
         </div>
       </div>
+      <div class="modal">
+        <label for="modal-2">
+          <div class="modal-trigger">STALK ME</div>
+        </label>
+        <input class="modal-state" id="modal-2" type="checkbox" />
+        <div class="modal-fade-screen">
+          <div class="modal-inner">
+            <div class="modal-close" for="modal-2"></div>
+            <div class="modal-content">
+              <h1>CONTACT ME:</h1>
+              <ul>
+                <li><i class="fa fa-envelope-o"></i>Email</li>
+                <li><i class="fa fa-github-square"></i>Github</li>
+                <li><i class="fa fa-linkedin-square"></i>LinkedIn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <i class="fa fa-envelope-o"></i>
-      <i class="fa fa-github-square"></i>
-      <i class="fa fa-linkedin-square"></i>
     </div>
 
   <!-- <div class="wrap"> -->
@@ -68,54 +83,53 @@
 
 
     <div class="inner">
-      <p>My name is <span>Chris McCandlish</span>. This is my portfolio page made with Bourbon, Neat and Bitters.</p>
+      <p>My name is <span>Chris McCandlish</span>. I believe that coding should improve communication. And vice-versa.</p>
     </div>
-<!--   </div> -->
 
-</header>
+  </header>
 
 
-<div class="picture">
-  <img src="lamp2.png" alt="">
-  <div class="trapezoid"></div>
-  <i class='fa fa-angle-left prev'></i>
-  <i class='fa fa-angle-right next'></i>
-  <div class="frame">
-    <img id="corners" src="cornershadows.png" alt="" class="cornerShadow">
-    <div class="screen" id="screeny">
+  <div class="picture">
+    <img src="lamp2.png" alt="">
+    <div class="trapezoid"></div>
+    <i class='fa fa-angle-left prev'></i>
+    <i class='fa fa-angle-right next'></i>
+    <div class="frame">
+      <img id="corners" src="cornershadows.png" alt="" class="cornerShadow">
+      <div class="screen" id="screeny">
+
+        <div class="slide">
+          <div class="media">
+            <img class="media_image" src="Flixar.png" alt="">
+            <div class="media_body">
+              <p><span>Flixar</span> was my first group project at The Iron Yard. Built using JQuery, Underscore and SASS, Flixar recommends movies based on a user's mood and tastes. Starting with a general mood, the user picks from increasingly specific subgenres until Flixar picks three films and displays their info by pulling from IMDB film API.</p>
+              <button class="classname" onclick="window.location='http://cmccand.github.io/gitReal'">See The Site!</button>
+            </div>
+          </div>
+        </div>
 
       <div class="slide">
         <div class="media">
-          <img class="media_image" src="Flixar.png" alt="">
+          <img class="media_image" src="Sipster2.png" alt="">
           <div class="media_body">
-            <p><span>Flixar</span> was my first group project at The Iron Yard. Built using JQuery, Underscore and SASS, Flixar recommends movies based on a user's mood and tastes. Starting with a general mood, the user picks from increasingly specific subgenres until Flixar picks three films and displays their info by pulling from IMDB film API.</p>
-            <button class="classname" onclick="window.location='http://cmccand.github.io/gitReal'">See The Site!</button>
+            <p>Sipster is a hipster drink name generator. Built using BackboneJS and Ruby on Rails, it is the product of my collaboration with two students from the Rails class at The Iron Yard. Simply pick your mood, and Sipster randomly pulls two words out of its database and concatenates them into a drink name. The drinks don't actually correspond to the mood; it's just meant to be fun.</p>
+            <a href="https://riff-101.herokuapp.com/#/">See the Site!</a>
           </div>
         </div>
       </div>
 
-    <div class="slide">
-      <div class="media">
-        <img class="media_image" src="Sipster2.png" alt="">
-        <div class="media_body">
-          <p>Sipster is a hipster drink name generator. Built using BackboneJS and Ruby on Rails, it is the product of my collaboration with two students from the Rails class at The Iron Yard. Simply pick your mood, and Sipster randomly pulls two words out of its database and concatenates them into a drink name. The drinks don't actually correspond to the mood; it's just meant to be fun.</p>
-          <a href="https://riff-101.herokuapp.com/#/">See the Site!</a>
+      <div class="vid slide">
+        <div class="media">
+          <img class="media_image" src="Riff1.png" alt="">
+          <div class="media_body">
+            <p>My final project at The Iron Yard, Riff is the product of a collaboration with two Ruby on Rails students. Put simply, Riff allows users to upload spontaneous musical recordings of themselves. Other users can then see the uploaded "riff" and respond with their own "riff," which can then be played back with the original riff. There is still much styling and UX/UI to be added, but users can sign up, upload an .mp3 riff and play it back, as well as leave a comment on other user's riffs in the form of an upload.</p>
+            <a href="https://riff-101.herokuapp.com/#/">See the Site!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="vid slide">
-      <div class="media">
-        <img class="media_image" src="Riff1.png" alt="">
-        <div class="media_body">
-          <p>My final project at The Iron Yard, Riff is the product of a collaboration with two Ruby on Rails students. Put simply, Riff allows users to upload spontaneous musical recordings of themselves. Other users can then see the uploaded "riff" and respond with their own "riff," which can then be played back with the original riff. There is still much styling and UX/UI to be added, but users can sign up, upload an .mp3 riff and play it back, as well as leave a comment on other user's riffs in the form of an upload.</p>
-          <a href="https://riff-101.herokuapp.com/#/">See the Site!</a>
-        </div>
-      </div>
     </div>
-
   </div>
-</div>
 
 
 
