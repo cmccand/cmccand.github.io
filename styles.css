@@ -5,16 +5,18 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-#bg {
-  position: fixed;
+/* #bg {
+  position: scroll;
+  background-size:cover;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  z-index: -5000; }
-
+  z-index: -5000;
+}
 #bg img {
   position: absolute;
+  background-repeat:no-repeat;
   top: 0;
   left: 0;
   right: 0;
@@ -22,7 +24,14 @@ html {
   margin: auto;
   min-width: 50%;
   min-height: 50%;
-  z-index: -5000; }
+  z-index: -5000;
+} */
+html {
+  background: url(library3dark.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 header {
   height: 70vh;
