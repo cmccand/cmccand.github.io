@@ -1,41 +1,772 @@
-/*
-Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
-        on line 346 of styles.scss
+@import url(http://fonts.googleapis.com/css?family=Lato);
+html {
+  box-sizing: border-box; }
 
-341:       @include media($large-screen) {
-342:         font-size:5vh;
-343:       }
-344:     }
-345:   }
-346: }
-347: 
-348: @include keyframes(appear) {
-349:   0%   { opacity: 0; }
-350:   100% { opacity: 1;
-351:     @include animation-timing-function(steps(1, end));
+*, *::after, *::before {
+  box-sizing: inherit; }
 
-Backtrace:
-styles.scss:346
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:43:in `parse'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Users/ChrisMac/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 346 of styles.scss\A \A 341:       @include media($large-screen) {\A 342:         font-size:5vh;\A 343:       }\A 344:     }\A 345:   }\A 346: }\A 347: \A 348: @include keyframes(appear) {\A 349:   0%   { opacity: 0; }\A 350:   100% { opacity: 1;\A 351:     @include animation-timing-function(steps(1, end));"; }
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -5000; }
+
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -5000; }
+
+header {
+  height: 70vh;
+  background-color: #2D4369;
+  position: relative; }
+  @media screen and (max-width: 375px) {
+    header {
+      height: 20vh; } }
+  header body {
+    background-color: #4e4e4e;
+    margin: 0;
+    text-align: center;
+    font-size: 10px; }
+  header .modal {
+    width: 12vw;
+    display: inline-block; }
+    header .modal label {
+      cursor: pointer;
+      margin-bottom: 0; }
+    header .modal label img {
+      border-radius: 150px;
+      display: block;
+      max-width: 300px; }
+    header .modal .modal-state {
+      display: none; }
+    header .modal .modal-trigger {
+      display: inline-block;
+      background-color: #2D4369;
+      color: white;
+      padding: 6%;
+      font-family: "Lato", sans-serif;
+      font-size: 1.2vw;
+      border: 3px solid #6D5841;
+      margin-top: 7%;
+      margin-right: 10%;
+      border-radius: 10%;
+      width: 10vw;
+      text-align: center; }
+      header .modal .modal-trigger:disabled {
+        cursor: not-allowed;
+        opacity: 0.5; }
+      header .modal .modal-trigger:hover {
+        background-color: #FBF8CA;
+        color: #2D4369; }
+    header .modal .modal-fade-screen {
+      -webkit-transition: opacity 0.25s ease;
+      -moz-transition: opacity 0.25s ease;
+      transition: opacity 0.25s ease;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.85);
+      opacity: 0;
+      padding-top: 0.6em;
+      text-align: left;
+      visibility: hidden;
+      z-index: 99999999999; }
+      @media screen and (min-width: 53.75em) {
+        header .modal .modal-fade-screen {
+          padding-top: 10em; } }
+      header .modal .modal-fade-screen .modal-bg {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        cursor: pointer; }
+    header .modal .modal-close {
+      position: absolute;
+      top: 1.5em;
+      right: 1.5em;
+      height: 1.5em;
+      width: 1.5em;
+      background: white;
+      cursor: pointer; }
+      header .modal .modal-close:after, header .modal .modal-close:before {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        height: 1.5em;
+        width: 0.15em;
+        background: #DDD;
+        content: '';
+        display: block;
+        margin: -3px 0 0 -1px; }
+      header .modal .modal-close:hover:after, header .modal .modal-close:hover:before {
+        background: #c4c4c4; }
+      header .modal .modal-close:before {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+    header .modal .modal-inner {
+      -webkit-transition: opacity 0.25s ease;
+      -moz-transition: opacity 0.25s ease;
+      transition: opacity 0.25s ease;
+      background: white;
+      margin-top: 0;
+      margin: auto;
+      max-height: 95%;
+      overflow: auto;
+      padding: 1.5em;
+      position: relative;
+      width: 95%; }
+      @media screen and (min-width: 40em) {
+        header .modal .modal-inner {
+          max-height: 70%;
+          padding: 3em;
+          width: 60%; } }
+      @media screen and (min-width: 53.75em) {
+        header .modal .modal-inner {
+          width: 50%; } }
+      header .modal .modal-inner h1 {
+        color: #333;
+        margin-bottom: 0 0 0.6em 0;
+        text-align: left;
+        text-transform: capitalize; }
+      header .modal .modal-inner p {
+        color: #333;
+        line-height: 1.5em; }
+      header .modal .modal-inner .modal-intro {
+        font-weight: 800; }
+      header .modal .modal-inner .modal-content {
+        color: #333; }
+        header .modal .modal-inner .modal-content h1 {
+          font-family: "Lato", sans-serif;
+          text-align: center;
+          color: #6D5841; }
+        header .modal .modal-inner .modal-content p.catcher {
+          font-family: "kulturista-web"; }
+          header .modal .modal-inner .modal-content p.catcher span {
+            font-style: italic; }
+        header .modal .modal-inner .modal-content ul {
+          text-align: center; }
+          header .modal .modal-inner .modal-content ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 7%;
+            font-family: "kulturista-web";
+            font-size: 1.5vw;
+            color: #2D4369; }
+            header .modal .modal-inner .modal-content ul li i {
+              padding: 4%;
+              font-size: 4vw;
+              border-radius: 10%;
+              display: block; }
+              header .modal .modal-inner .modal-content ul li i:hover {
+                background-color: #FBF8CA;
+                color: #2D4369; }
+      header .modal .modal-inner a.cta {
+        color: white;
+        display: inline-block;
+        margin-right: 0.5em;
+        margin-top: 1em; }
+        header .modal .modal-inner a.cta:last-child {
+          padding: 0 2em; }
+    header .modal .modal-state:checked + .modal-fade-screen {
+      opacity: 1;
+      visibility: visible; }
+    header .modal .modal-state:checked + .modal-fade-screen .modal-inner {
+      top: 0.5em; }
+  header .modal-open {
+    overflow: hidden; }
+  header .stalk {
+    float: right;
+    text-align: right;
+    margin-top: 0;
+    color: white;
+    padding: 1%;
+    width: 38vw;
+    display: inline-block; }
+    header .stalk p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.2vw;
+      border: 3px solid #6D5841;
+      border-radius: 10%;
+      display: inline-block;
+      padding: 4%; }
+  header .lamp {
+    width: 8vw;
+    height: 35vh;
+    display: inline-block;
+    margin-left: 25%;
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: lamp 3s forwards;
+    -moz-animation: lamp 3s forwards;
+    animation: lamp 3s forwards;
+    position: absolute; }
+  header .bulb {
+    fill: #FBF8CA;
+    fill-opacity: 0.1;
+    -webkit-animation: bulb 0.3s 0.3s 5 cubic-bezier(0.26, 1.17, 0.89, -0.74) alternate forwards;
+    -moz-animation: bulb 0.3s 0.3s 5 cubic-bezier(0.26, 1.17, 0.89, -0.74) alternate forwards;
+    animation: bulb 0.3s 0.3s 5 cubic-bezier(0.26, 1.17, 0.89, -0.74) alternate forwards; }
+  header .switch {
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s; }
+    header .switch:active {
+      -webkit-transform: translateY(5px);
+      -moz-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+      -o-transform: translateY(5px);
+      transform: translateY(5px); }
+@-webkit-keyframes bulb {
+  to {
+    fill-opacity: 1;
+    fill: #FBF8CA; } }
+@-moz-keyframes bulb {
+  to {
+    fill-opacity: 1;
+    fill: #FBF8CA; } }
+@keyframes bulb {
+  to {
+    fill-opacity: 1;
+    fill: #FBF8CA; } }
+@-webkit-keyframes lamp {
+  5% {
+    -webkit-transform: rotate(-45deg); }
+  10% {
+    -webkit-transform: rotate(35deg); }
+  15% {
+    -webkit-transform: rotate(-35deg); }
+  25% {
+    -webkit-transform: rotate(15deg); }
+  40% {
+    -webkit-transform: rotate(-15deg); }
+  65% {
+    -webkit-transform: rotate(3deg); }
+  85% {
+    -webkit-transform: rotate(-1deg); }
+  100% {
+    -webkit-transform: rotate(0deg); } }
+@-moz-keyframes lamp {
+  5% {
+    -moz-transform: rotate(-45deg); }
+  10% {
+    -moz-transform: rotate(35deg); }
+  15% {
+    -moz-transform: rotate(-35deg); }
+  25% {
+    -moz-transform: rotate(15deg); }
+  40% {
+    -moz-transform: rotate(-15deg); }
+  65% {
+    -moz-transform: rotate(3deg); }
+  85% {
+    -moz-transform: rotate(-1deg); }
+  100% {
+    -moz-transform: rotate(0deg); } }
+@keyframes lamp {
+  5% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  10% {
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg); }
+  15% {
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg); }
+  25% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  40% {
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+  65% {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg); }
+  85% {
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    transform: rotate(-1deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+@-webkit-keyframes drop {
+  0% {
+    -webkit-transform: translateY(-500px); }
+  100% {
+    -webkit-transform: translateY(0px); } }
+@-moz-keyframes drop {
+  0% {
+    -moz-transform: translateY(-500px); }
+  100% {
+    -moz-transform: translateY(0px); } }
+@keyframes drop {
+  0% {
+    -webkit-transform: translateY(-500px);
+    -moz-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    -o-transform: translateY(-500px);
+    transform: translateY(-500px); }
+  100% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); } }
+  header .inner {
+    position: absolute;
+    top: 60%;
+    height: 12vh;
+    padding-left: 5%;
+    margin-top: -6vh; }
+    header .inner p {
+      font-size: 4vh;
+      margin: 0 auto;
+      font-family: "kulturista-web";
+      font-weight: 100;
+      color: white; }
+      header .inner p span {
+        font-weight: bold;
+        opacity: 0;
+        -webkit-animation: appear;
+        -moz-animation: appear;
+        animation: appear;
+        -webkit-animation-delay: 1.9s;
+        -moz-animation-delay: 1.9s;
+        animation-delay: 1.9s;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; }
+      @media screen and (min-width: 53.75em) {
+        header .inner p {
+          font-size: 5vh; } }
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-animation-timing-function: steps(1, end); } }
+@-moz-keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -moz-animation-timing-function: steps(1, end); } }
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end); } }
+.picture {
+  width: 90%;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5vh;
+  padding: 10%;
+  padding-top: 20%;
+  display: block; }
+  .picture img {
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto; }
+  .picture .trapezoid {
+    width: 88vw;
+    opacity: .2;
+    position: absolute;
+    z-index: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: 65vw solid #B0BBCE;
+    border-left: 40vw solid transparent;
+    border-right: 40vw solid transparent;
+    transform: rotate(0deg); }
+  .picture i.prev {
+    left: 3vw;
+    width: 5%;
+    font-size: 8vw;
+    display: block;
+    top: 50%;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease-in-out; }
+    .picture i.prev:hover {
+      transition: all .1s ease;
+      transform: translate(-5px, 0);
+      margin-right: -5px;
+      color: rgba(234, 236, 240, 0.9); }
+  .picture i.next {
+    right: 3vw;
+    width: 5%;
+    font-size: 8vw;
+    top: 50%;
+    display: block;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease-in-out; }
+    .picture i.next:hover {
+      transition: all .1s ease;
+      transform: translate(5px, 0);
+      margin-left: 5px;
+      color: rgba(234, 236, 240, 0.9); }
+  .picture .frame {
+    border-top: 8px solid #6D5841;
+    border-right: 8px solid #6D5841;
+    border-bottom: 8px solid #6D5841;
+    border-left: 8px solid #6D5841;
+    position: relative;
+    width: 100%;
+    height: auto; }
+    .picture .frame a {
+      width: 100%;
+      height: auto; }
+    .picture .frame #corners {
+      width: 100%;
+      height: auto;
+      pointer-events: none; }
+    .picture .frame .screen {
+      width: 100%;
+      background: linear-gradient(149deg, 0, 0, 128, 0.8);
+      border: 10px solid #fff;
+      box-shadow: 1px 1px 1px 1px rgba(189, 193, 194, 0.3) inset; }
+      .picture .frame .screen .img {
+        position: relative; }
+      .picture .frame .screen .description {
+        display: none;
+        position: absolute;
+        text-align: center;
+        margin: auto;
+        width: 65vw;
+        opacity: 1; }
+        .picture .frame .screen .description h2 {
+          font-family: 'Lato', sans-serif;
+          color: white;
+          text-align: center; }
+        .picture .frame .screen .description p {
+          font-family: "kulturista-web";
+          color: white;
+          text-align: center;
+          width: 80%;
+          margin: 0 auto; }
+        .picture .frame .screen .description a {
+          font-family: "kulturista-web";
+          color: white;
+          cursor: pointer; }
+      .picture .frame .screen img {
+        width: 100%;
+        height: auto;
+        position: relative; }
+      .picture .frame .screen .vid {
+        width: 100%;
+        height: auto;
+        position: relative; }
+        .picture .frame .screen .vid .description {
+          display: none; }
+          .picture .frame .screen .vid .description h4 {
+            font-family: 'Lato', sans-serif; }
+          .picture .frame .screen .vid .description p {
+            font-family: "kulturista-web"; }
+        .picture .frame .screen .vid video {
+          width: 100%;
+          height: auto; }
+          .picture .frame .screen .vid video:hover {
+            background: linear-gradient(149deg, #d3d4d5 0%, #d3d4d5 50%, #ccc 51%, #ccc 100%); }
+
+.media {
+  display: inline-block;
+  position: relative;
+  vertical-align: top; }
+
+.media_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block; }
+
+.media_body {
+  background: white;
+  color: black;
+  opacity: 0;
+  overflow: auto;
+  text-align: center;
+  transition: 0.6s;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  padding: 10%;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s; }
+  .media_body:hover {
+    opacity: 1; }
+  .media_body h2 {
+    margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 6vh; }
+  .media_body p {
+    /*     margin-bottom: 10px; */
+    font-family: "kulturista-web";
+    font-weight: 100;
+    font-size: 3vh;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 5px 6px 5px rgba(1, 4, 2, 0.1); }
+    .media_body p span {
+      font-weight: bold; }
+  .media_body button {
+    margin: 2%;
+    padding: 2%;
+    background: white;
+    color: #2D4369;
+    font-family: "kulturista-web";
+    border-radius: 5px; }
+    .media_body button:hover {
+      background: #FFFCBA; }
+  .media_body a {
+    /*     margin: 10px; */
+    cursor: pointer; }
+
+.wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin: 10vh;
+  margin-top: 0; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wrapper .wrapper2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .wrapper .wrapper2:last-child {
+      margin-right: 0; }
+    .wrapper .wrapper2 .about {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 8vh;
+      padding: 20px;
+      background-image: url("brownblock.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white; }
+      .wrapper .wrapper2 .about:last-child {
+        margin-right: 0; }
+      .wrapper .wrapper2 .about .bio {
+        color: white;
+      /* .trapezoid2 {
+      width: 150px;  height: 0px;
+      margin: 0 auto 0 auto;
+      margin-left:22%;
+      margin-right:60%;
+      border-bottom: 200px solid #856B4F;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      transform: rotate(180deg);
+      z-index:-1000;
+    } */ }
+    .wrapper .wrapper2 .photo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .wrapper .wrapper2 .photo:last-child {
+        margin-right: 0; }
+      .wrapper .wrapper2 .photo img {
+        width: 100%;
+        border: 12px solid #EFEFEF; }
+    .wrapper .wrapper2 .bio {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%;
+      font-family: "kulturista-web";
+      background-size: cover;
+      color: #2D4369; }
+      .wrapper .wrapper2 .bio:last-child {
+        margin-right: 0; }
+    .wrapper .wrapper2 .work h2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      font-family: 'Lato', sans-serif;
+      color: #6D5841; }
+      .wrapper .wrapper2 .work h2:last-child {
+        margin-right: 0; }
+    .wrapper .wrapper2 .work .first {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 20px;
+      background-color: #2D4369;
+      margin-bottom: 2%; }
+      .wrapper .wrapper2 .work .first:last-child {
+        margin-right: 0; }
+      .wrapper .wrapper2 .work .first:hover {
+        background-color: #FBF8CA; }
+        .wrapper .wrapper2 .work .first:hover article {
+          color: #2D4369; }
+      .wrapper .wrapper2 .work .first .photo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        .wrapper .wrapper2 .work .first .photo:last-child {
+          margin-right: 0; }
+        .wrapper .wrapper2 .work .first .photo video {
+          width: 100%;
+          border: 12px solid #EFEFEF; }
+      .wrapper .wrapper2 .work .first article {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%;
+        font-family: "kulturista-web";
+        color: white; }
+        .wrapper .wrapper2 .work .first article:last-child {
+          margin-right: 0; }
+    .wrapper .wrapper2 .work .second {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 20px;
+      background-color: #2D4369;
+      margin-bottom: 2%; }
+      .wrapper .wrapper2 .work .second:last-child {
+        margin-right: 0; }
+      .wrapper .wrapper2 .work .second:hover {
+        background-color: #6EA3FF;
+        color: white; }
+      .wrapper .wrapper2 .work .second .photo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .wrapper .wrapper2 .work .second .photo:last-child {
+          margin-right: 0; }
+        .wrapper .wrapper2 .work .second .photo img {
+          width: 100%;
+          border: 12px solid #EFEFEF; }
+      .wrapper .wrapper2 .work .second article {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        font-family: "kulturista-web";
+        color: white; }
+        .wrapper .wrapper2 .work .second article:last-child {
+          margin-right: 0; }
+    .wrapper .wrapper2 .work .third {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 20px;
+      background-color: #2D4369;
+      margin-bottom: 2%; }
+      .wrapper .wrapper2 .work .third:last-child {
+        margin-right: 0; }
+      .wrapper .wrapper2 .work .third:hover {
+        background-color: #6EA3FF;
+        color: white; }
+      .wrapper .wrapper2 .work .third .photo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .wrapper .wrapper2 .work .third .photo:last-child {
+          margin-right: 0; }
+        .wrapper .wrapper2 .work .third .photo img {
+          width: 100%;
+          border: 12px solid #EFEFEF; }
+      .wrapper .wrapper2 .work .third article {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        font-family: "kulturista-web";
+        color: white; }
+        .wrapper .wrapper2 .work .third article:last-child {
+          margin-right: 0; }
+
+/*# sourceMappingURL=styles.css.map */
