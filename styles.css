@@ -175,7 +175,8 @@ header {
           header .modal .modal-inner .modal-content p.catcher span {
             font-style: italic; }
         header .modal .modal-inner .modal-content p.about {
-          font-weight: 100; }
+          font-weight: 100;
+          border: none; }
         header .modal .modal-inner .modal-content ul {
           text-align: center; }
           header .modal .modal-inner .modal-content ul li {
