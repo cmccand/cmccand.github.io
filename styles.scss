@@ -182,11 +182,16 @@ header {
 
       .modal-content {
         color: $base-font-color;
-        @include media($medium-screen) {
           h1 {
             font-family: "Lato", sans-serif;
             text-align:center;
             color: #6D5841;
+          }
+          p.catcher {
+            font-family: "kulturista-web";
+            span {
+              font-style:italic;
+            }
           }
           ul {
             text-align:center;
