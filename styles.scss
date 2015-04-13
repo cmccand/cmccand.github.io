@@ -216,14 +216,17 @@ header {
               font-family: "kulturista-web";
               font-size:1.5vw;
               color: #2D4369;
+              cursor:pointer;
               i {
                 padding:4%;
                 font-size:4vw;
                 border-radius:10%;
                 display:block;
+                cursor:pointer;
                 &:hover {
                   background-color: #FBF8CA;
                   color:#2D4369;
+                  cursor:pointer;
                 }
               }
             }

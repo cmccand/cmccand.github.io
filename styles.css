@@ -185,15 +185,18 @@ header {
             padding: 7%;
             font-family: "kulturista-web";
             font-size: 1.5vw;
-            color: #2D4369; }
+            color: #2D4369;
+            cursor: pointer; }
             header .modal .modal-inner .modal-content ul li i {
               padding: 4%;
               font-size: 4vw;
               border-radius: 10%;
-              display: block; }
+              display: block;
+              cursor: pointer; }
               header .modal .modal-inner .modal-content ul li i:hover {
                 background-color: #FBF8CA;
-                color: #2D4369; }
+                color: #2D4369;
+                cursor: pointer; }
       header .modal .modal-inner a.cta {
         color: white;
         display: inline-block;
