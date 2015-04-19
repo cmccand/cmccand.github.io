@@ -727,13 +727,12 @@ header {
       display:inline-block;
       .modal {
         width: 20vw;
+        margin:1%;
         label {
-
           .modal-trigger {
             font-size:3vw;
             width:20vw;
             display:inline-block;
-
           }
         }
       }
@@ -752,9 +751,9 @@ header {
       font-size: 5.8vw;
     }
     .lamp {
-      width:38vw;
-      height:20vh;
-      margin-left: 2vw;
+      width:35vw;
+      height:22vh;
+      margin-left: 0;
     }
   }
 
