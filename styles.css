@@ -777,10 +777,10 @@ header {
   header {
     height: 72vh; }
     header .inner p {
-      font-size: 5.5vw; }
+      font-size: 6vw; }
     header .lamp {
-      width: 18vw;
+      width: 20vw;
       height: 40vh;
-      margin-left: 50vw; } }
+      margin-left: 48vw; } }
 
 /*# sourceMappingURL=styles.css.map */
