@@ -37,9 +37,6 @@ header {
   height: 70vh;
   background-color: #2D4369;
   position: relative; }
-  @media screen and (max-width: 375px) {
-    header {
-      height: 20vh; } }
   header body {
     background-color: #4e4e4e;
     margin: 0;
@@ -511,33 +508,7 @@ header {
       width: 100%;
       background: linear-gradient(149deg, 0, 0, 128, 0.8);
       border: 10px solid #fff;
-      box-shadow: 1px 1px 1px 1px rgba(189, 193, 194, 0.3) inset;
-    /* .description {
-      display:none;
-      position:absolute;
-      text-align:center;
-      margin:auto;
-      width: 65vw;
-      opacity:1;
-      h2 {
-        font-family: 'Lato', sans-serif;
-        color:white;
-        text-align:center;
-      }
-      p {
-        font-family: "kulturista-web";
-        color:white;
-        text-align:center;
-        width:80%;
-        margin: 0 auto;
-      }
-      a {
-        font-family: "kulturista-web";
-        color:white;
-        cursor:pointer;
-  
-      }
-    } */ }
+      box-shadow: 1px 1px 1px 1px rgba(189, 193, 194, 0.3) inset; }
       .picture .frame .screen .img {
         position: relative; }
       .picture .frame .screen img {
@@ -801,5 +772,15 @@ header {
         color: white; }
         .wrapper .wrapper2 .work .third article:last-child {
           margin-right: 0; }
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  header {
+    height: 72vh; }
+    header .inner p {
+      font-size: 5.5vw; }
+    header .lamp {
+      width: 18vw;
+      height: 40vh;
+      margin-left: 50vw; } }
 
 /*# sourceMappingURL=styles.css.map */
