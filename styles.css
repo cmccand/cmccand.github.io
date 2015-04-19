@@ -775,12 +775,63 @@ header {
 
 @media screen and (min-width: 375px) and (max-width: 667px) {
   header {
-    height: 50vh; }
+    height: 48vh; }
+    header .stalk {
+      float: left;
+      text-align: center;
+      margin-top: 14%;
+      margin-left: 10%;
+      color: white;
+      padding: 0;
+      width: 46vw;
+      display: inline-block; }
+      header .stalk .modal {
+        width: 20vw; }
+        header .stalk .modal label .modal-trigger {
+          font-size: 3vw;
+          width: 20vw;
+          display: inline-block; }
+      header .stalk p {
+        font-family: "Lato", sans-serif;
+        font-size: 1.2vw;
+        border: 3px solid #6D5841;
+        border-radius: 10%;
+        display: inline-block;
+        padding: 4%; }
     header .inner p {
       font-size: 5.8vw; }
     header .lamp {
-      width: 23vw;
-      height: 22vh;
-      margin-left: 48vw; } }
+      width: 38vw;
+      height: 20vh;
+      margin-left: 2vw; }
+
+  .picture {
+    width: 100%;
+    margin-top: 2vh; }
+    .picture img {
+      width: 20vw;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1;
+      text-align: center;
+      margin: 0 auto; }
+    .picture .trapezoid {
+      width: 92vw;
+      opacity: .2;
+      position: absolute;
+      z-index: 0;
+      margin: 0 auto;
+      text-align: center;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      border-bottom: 65vw solid #B0BBCE;
+      border-left: 40vw solid transparent;
+      border-right: 40vw solid transparent;
+      transform: rotate(0deg); } }
 
 /*# sourceMappingURL=styles.css.map */
