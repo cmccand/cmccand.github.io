@@ -841,17 +841,17 @@ header {
       float: left;
       text-align: center;
       margin-top: 8%;
-      margin-left: 7%;
+      margin-left: 6%;
       color: white;
       padding: 0;
-      width: 36vw;
+      width: 40vw;
       display: inline-block; }
       header .stalk .modal {
-        width: 18vw;
+        width: 17vw;
         margin: 1%; }
         header .stalk .modal label .modal-trigger {
-          font-size: 3vw;
-          width: 18vw;
+          font-size: 2.5vw;
+          width: 17vw;
           display: inline-block; }
       header .stalk p {
         font-family: "Lato", sans-serif;
@@ -865,7 +865,8 @@ header {
     header .lamp {
       width: 50vw;
       height: 35vh;
-      margin-left: 0; }
+      margin-left: 0;
+      margin-right: 5%; }
 
   .picture {
     width: 100%;
