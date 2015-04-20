@@ -799,10 +799,10 @@ and (orientation: portrait) {
 @media screen
 and (min-width:320px)
 and (max-width:667px)
-and (orientation: portrait) {
+and (orientation: landscape) {
 
   header {
-    height:42vh;
+    height:80vh;
     .stalk {
       float:left;
       text-align:center;
