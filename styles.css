@@ -783,14 +783,14 @@ header {
       margin-left: 7%;
       color: white;
       padding: 0;
-      width: 36vw;
+      width: 46vw;
       display: inline-block; }
       header .stalk .modal {
         width: 20vw;
         margin: 1%; }
         header .stalk .modal label .modal-trigger {
           font-size: 3vw;
-          width: 18vw;
+          width: 20vw;
           display: inline-block; }
       header .stalk p {
         font-family: "Lato", sans-serif;
@@ -836,7 +836,7 @@ header {
       transform: rotate(0deg); } }
 @media screen and (min-width: 320px) and (max-width: 667px) and (orientation: landscape) {
   header {
-    height: 85vh; }
+    height: 80vh; }
     header .stalk {
       float: left;
       text-align: center;
@@ -844,10 +844,10 @@ header {
       margin-left: 7%;
       color: white;
       padding: 0;
-      width: 46vw;
+      width: 36vw;
       display: inline-block; }
       header .stalk .modal {
-        width: 20vw;
+        width: 18vw;
         margin: 1%; }
         header .stalk .modal label .modal-trigger {
           font-size: 3vw;
@@ -861,10 +861,10 @@ header {
         display: inline-block;
         padding: 4%; }
     header .inner p {
-      font-size: 5.8vw; }
+      font-size: 6.2vw; }
     header .lamp {
       width: 50vw;
-      height: 30vh;
+      height: 35vh;
       margin-left: 0; }
 
   .picture {

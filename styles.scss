@@ -726,7 +726,7 @@ and (orientation: portrait) {
       margin-left: 7%;
       color:white;
       padding:0;
-      width:36vw;
+      width:46vw;
       display:inline-block;
       .modal {
         width: 20vw;
@@ -734,7 +734,7 @@ and (orientation: portrait) {
         label {
           .modal-trigger {
             font-size:3vw;
-            width:18vw;
+            width:20vw;
             display:inline-block;
           }
         }
@@ -802,7 +802,7 @@ and (max-width:667px)
 and (orientation: landscape) {
 
   header {
-    height:85vh;
+    height:80vh;
     .stalk {
       float:left;
       text-align:center;
@@ -810,10 +810,10 @@ and (orientation: landscape) {
       margin-left: 7%;
       color:white;
       padding:0;
-      width:46vw;
+      width:36vw;
       display:inline-block;
       .modal {
-        width: 20vw;
+        width: 18vw;
         margin:1%;
         label {
           .modal-trigger {
@@ -835,11 +835,11 @@ and (orientation: landscape) {
     }
 
     .inner p {
-      font-size: 5.8vw;
+      font-size: 6.2vw;
     }
     .lamp {
       width:50vw;
-      height:30vh;
+      height:35vh;
       margin-left: 0;
     }
   }
