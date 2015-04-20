@@ -174,8 +174,32 @@ header {
         header .modal .modal-inner .modal-content p.about {
           font-weight: 100;
           border: none; }
+        header .modal .modal-inner .modal-content #cell {
+          text-align: center;
+          margin: 0 auto;
+          height: auto; }
+          header .modal .modal-inner .modal-content #cell a p {
+            font-family: "kulturista-web";
+            font-size: 2vw;
+            color: #2D4369;
+            cursor: pointer;
+            vertical-align: top;
+            margin: 0;
+            border: none; }
+          header .modal .modal-inner .modal-content #cell i {
+            padding: 1%;
+            font-size: 5vw;
+            border-radius: 10%;
+            display: inline-block;
+            color: #2D4369;
+            cursor: pointer; }
+            header .modal .modal-inner .modal-content #cell i:hover {
+              background-color: #FBF8CA;
+              color: #2D4369;
+              cursor: pointer; }
         header .modal .modal-inner .modal-content ul {
-          text-align: center; }
+          text-align: center;
+          margin-top: 0; }
           header .modal .modal-inner .modal-content ul li {
             display: inline-block;
             list-style-type: none;
