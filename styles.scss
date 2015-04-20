@@ -726,7 +726,7 @@ and (orientation: portrait) {
       margin-left: 7%;
       color:white;
       padding:0;
-      width:46vw;
+      width:36vw;
       display:inline-block;
       .modal {
         width: 20vw;
@@ -734,7 +734,7 @@ and (orientation: portrait) {
         label {
           .modal-trigger {
             font-size:3vw;
-            width:20vw;
+            width:18vw;
             display:inline-block;
           }
         }
@@ -802,11 +802,11 @@ and (max-width:667px)
 and (orientation: landscape) {
 
   header {
-    height:80vh;
+    height:85vh;
     .stalk {
       float:left;
       text-align:center;
-      margin-top:10%;
+      margin-top:8%;
       margin-left: 7%;
       color:white;
       padding:0;
@@ -825,7 +825,7 @@ and (orientation: landscape) {
       }
       p {
         font-family: "Lato", sans-serif;
-        font-size:1.2vw;
+        font-size:2vw;
         border:3px solid #6D5841;
         border-radius: 10%;
         display:inline-block;
