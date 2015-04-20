@@ -567,7 +567,7 @@ header {
     font-size: 6vh; }
   .media_body p.tech {
     padding: 4%;
-    font-family: 'Lato', sans-serif;
+    font-family: "kulturista-web";
     font-size: 3vh;
     width: 60%;
     text-align: left;
@@ -576,13 +576,10 @@ header {
     .media_body p.tech span {
       font-weight: bold; }
   .media_body p {
-    /* border: 3px solid #6D5841;
-    border-radius:10%; */
     padding: 4%;
-    font-family: "kulturista-web";
-    /*     font-weight:100; */
+    font-family: "Lato", sans-serif;
     font-size: 3vh;
-    width: 60%;
+    width: 65%;
     text-align: left;
     margin: 0 auto;
     text-shadow: 5px 6px 5px rgba(1, 4, 2, 0.1); }
