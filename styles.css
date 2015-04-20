@@ -847,11 +847,11 @@ header {
       width: 36vw;
       display: inline-block; }
       header .stalk .modal {
-        width: 18vw;
+        width: 16vw;
         margin: 1%; }
         header .stalk .modal label .modal-trigger {
           font-size: 3vw;
-          width: 20vw;
+          width: 16vw;
           display: inline-block; }
       header .stalk p {
         font-family: "Lato", sans-serif;
